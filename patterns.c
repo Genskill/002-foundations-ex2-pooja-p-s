@@ -3,33 +3,38 @@
 
 void pattern1(int n)
 {
-    for(int i=0;i<=n;i++)
-    {
-        for(int j=n-i;j>0;j--)
-        {
-            printf("#");
-        }
-        printf("\n");
-    }    
+   while (n != 0) {
+            for (int i = 0; i < n; i++) {
+                printf("#");
+            }
+            printf("\n");
+            n--;
+        }   
 }
 
 void pattern2(int n)
 {
-    int a=n-1,b=1;
-    while(a>=0 && b<=n)
+    for(int i=1; i<=n; i++)
+  {
+    for(int j=1; j<=n-i; j++)
     {
-        for(int i=0;i<a;i++){
-            printf(" ");
-        }
-        for(int j=0;j<b;j++)
-        {
-            printf("#");
-        }
-        printf("\n");
-        a--;b++;
-    }  
+       printf(" ");
+     }
+    for(int k=1; k<=i;k++)
+    {
+     printf("#");
+    }
+   printf("\n");
+   }
 
 }
+
+
+
+ 
+  
+
+
 
 int main(void) 
 {
